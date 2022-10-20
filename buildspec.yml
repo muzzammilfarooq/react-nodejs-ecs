@@ -9,7 +9,7 @@ phases:
     commands:
       - "echo Build started on `date`"
       - "echo Building the Docker image..."
-      - "docker build -t html-nginx ."
+      - "docker build -t react-node ."
       - "docker tag react-node:latest 071915009020.dkr.ecr.us-east-1.amazonaws.com/frontend/react-node"
   post_build:
     commands:
