@@ -17,6 +17,6 @@ phases:
       - "echo Build completed on `date`"
       - "echo Pushing the Docker image..."
       - "docker push 071915009020.dkr.ecr.us-east-1.amazonaws.com/frontend/react-node:latest"
-      - printf '[{"name":"rakeshcontainer","imageUri":"%s"}]' 071915009020.dkr.ecr.us-east-1.amazonaws.com/frontend/react-node:latest > imagedefinitions.json
+      - printf '[{"name":"ui-22","imageUri":"%s"}]' 071915009020.dkr.ecr.us-east-1.amazonaws.com/frontend/react-node:latest > imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
