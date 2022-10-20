@@ -1,4 +1,4 @@
-FROM 071915009020.dkr.ecr.us-east-1.amazonaws.com/node
+FROM 071915009020.dkr.ecr.us-east-1.amazonaws.com/node:10
 WORKDIR /usr/src/app
 COPY my-app/ ./my-app/
 RUN cd my-app && npm install && npm run build
