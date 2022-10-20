@@ -1,4 +1,4 @@
-FROM 071915009020.dkr.ecr.us-east-1.amazonaws.com/frontend/react-node:v1 AS ui-build
+FROM 071915009020.dkr.ecr.us-east-1.amazonaws.com/node AS ui-build
 WORKDIR /usr/src/app
 COPY my-app/ ./my-app/
 RUN cd my-app && npm install && npm run build
